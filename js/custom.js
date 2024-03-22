@@ -11,7 +11,7 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-//Markdown
+// Markdown
 var rules = SimpleMarkdown.defaultRules; // for example
 var parser = SimpleMarkdown.parserFor(rules);
 var htmlOutput = SimpleMarkdown.reactFor(SimpleMarkdown.ruleOutput(rules, 'html'));
@@ -47,7 +47,7 @@ function parseAndShowDocument(data, url, raw) {
         text += "\n\n"
     // update
     $('#output').html('<a class="button" href="'+url+'">Download Original</a><br><br>'+(text.replace(/  /g,' &nbsp;')));
-    //twemoji
+    // twemoji
     if(!raw)
     {
         twemoji.size = '16x16';
@@ -73,7 +73,7 @@ $(document).ready(function() {
     } else {
         $('#output').html('No text file provided.<br><br>'
             +'This site is used to view .txt files that have been uploaded to Discord.<br><br>'
-            +'For example, the file uploaded here: https://cdn.discordapp.com/attachments/147698382092238848/506154212124786689/example.txt<br><br>'
-            +'Can be viewed here: https://txt.discord.website/?txt=147698382092238848/506154212124786689/example');
+            +'For example, the file uploaded here: <a href="https://cdn.discordapp.com/attachments/1162810075895824515/1220643987610669106/example.txt">https://cdn.discordapp.com/attachments/1162810075895824515/1220643987610669106/example.txt</a><br><br>'
+            +'Can be viewed here: <a href="https://txt.matthewzring.dev/?txt=1162810075895824515/1220643987610669106/example">https://txt.matthewzring.dev/?txt=1162810075895824515/1220643987610669106/example</a>');
     }
 });

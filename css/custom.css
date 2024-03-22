@@ -1,5 +1,5 @@
 html, body {
-  background-color: #36393E;
+  background-color: #1e1f22;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   width: 98%;
@@ -15,12 +15,12 @@ a {
 }
 
 .time {
-  color: hsla(0,0%,100%,.2);
+  color: hsla(0,0%,100%,.4);
   font-size: 10pt;
 }
 
 .footer {
-  color: hsla(0,0%,100%,.2);
+  color: hsla(0,0%,100%,.4);
   font-size: 10pt;
   text-align: center;
   margin-top: 40px;
@@ -31,18 +31,17 @@ a {
 .name {
   font-weight: bold;
   text-decoration: underline;
-  color: #7289DA;
+  color: #5865F2;
   padding-right: 4px;
   line-height: 200%;
 }
 
 .button {
-  border: 2px solid #99AAB5;
-  background-color: #7289DA;
+  background-color: #5865F2;
   margin: 4px 2px;
   text-align: center;
   padding: 4px 6px;
-  border-radius: 5px;
+  border-radius: 4px;
   color: white;
   text-decoration: none;
   vertical-align:middle;
@@ -50,7 +49,7 @@ a {
 }
 
 img.logo {
-  height: 31px;
+  height: 28px;
   margin: 4px 2px;
   vertical-align:middle;
   display: inline;
